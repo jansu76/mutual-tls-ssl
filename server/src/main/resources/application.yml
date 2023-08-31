@@ -13,3 +13,6 @@ server:
     key-store: classpath:identity.jks
     key-password: secret
     key-store-password: secret
+    trust-store: classpath:client-truststore.jks
+    trust-store-password: secret
+    client-auth: need

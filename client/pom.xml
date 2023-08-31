@@ -506,6 +506,7 @@
                         <directory>src/test/resources</directory>
                         <includes>
                             <include>identity.jks</include>
+                            <include>client-identity.jks</include>
                             <include>truststore.jks</include>
                             <include>application.yml</include>
                             <include>cucumber.properties</include>
