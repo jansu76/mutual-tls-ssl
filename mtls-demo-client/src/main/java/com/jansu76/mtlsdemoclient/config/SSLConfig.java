@@ -48,7 +48,7 @@ public class SSLConfig {
 
         boolean HARD_CODED_OVERRIDE = true;
         if (HARD_CODED_OVERRIDE) {
-            keyStorePath = "client-identity.jks";
+            keyStorePath = "client_identity.jks";
             keyStorePassword = "secret".toCharArray();
             trustStorePassword = "secret".toCharArray();
             trustStorePath = "truststore.jks";
