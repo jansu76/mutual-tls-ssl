@@ -10,7 +10,7 @@ server:
   port: 8443
   ssl:
     enabled: true
-    key-store: classpath:correct_server_identity.jks
+    key-store: classpath:wrong-san-ip_server_identity.jks
     key-password: secret
     key-store-password: secret
     trust-store: classpath:correct_server_truststore.jks

@@ -27,8 +27,9 @@ public class MtlsDemoClientApplication {
 		public void run(String...args) throws Exception {
 			System.out.println("command line runner running the app");
 //			ClientResponse response = clientService.executeRequest("https://localhost:8443/api/hello");
-//      	ClientResponse response = clientService.executeRequest("https://fubar.com:8443/api/hello");
-			ClientResponse response = clientService.executeRequest("https://babar.com:8443/api/hello");
+//			ClientResponse response = clientService.executeRequest("https://fubar.com:8443/api/hello");
+			ClientResponse response = clientService.executeRequest("https://127.0.0.1:8443/api/hello");
+//			ClientResponse response = clientService.executeRequest("https://babar.com:8443/api/hello");
 //			ClientResponse response = clientService.executeRequest("https://bazbaz.com:8443/api/hello");
 			System.out.println("Response: " + response.getResponseBody());
 			System.out.println("Status code: " + response.getStatusCode());

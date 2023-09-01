@@ -51,7 +51,7 @@ public class SSLConfig {
             keyStorePath = "correct_client_identity.jks";
             keyStorePassword = "secret".toCharArray();
             trustStorePassword = "secret".toCharArray();
-            trustStorePath = "fubar-san_client_truststore.jks";
+            trustStorePath = "wrong-san-ip_client_truststore.jks";
         }
             return SSLFactory.builder()
                     .withIdentityMaterial(keyStorePath, keyStorePassword)

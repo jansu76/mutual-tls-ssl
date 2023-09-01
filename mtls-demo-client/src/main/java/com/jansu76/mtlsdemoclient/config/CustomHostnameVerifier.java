@@ -11,6 +11,9 @@ public class CustomHostnameVerifier implements HostnameVerifier {
         if (host.equals("babar.com")) {
             return true;
         }
+        if (host.equals("127.0.0.1")) {
+            return true;
+        }
         return FenixHostnameVerifier.getInstance().verify(host, sslSession);
     }
 }
