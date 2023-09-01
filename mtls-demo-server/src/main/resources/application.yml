@@ -10,9 +10,9 @@ server:
   port: 8443
   ssl:
     enabled: true
-    key-store: classpath:server-identity.jks
+    key-store: classpath:correct_server_identity.jks
     key-password: secret
     key-store-password: secret
-    trust-store: classpath:client-truststore.jks
+    trust-store: classpath:correct_server_truststore.jks
     trust-store-password: secret
     client-auth: need

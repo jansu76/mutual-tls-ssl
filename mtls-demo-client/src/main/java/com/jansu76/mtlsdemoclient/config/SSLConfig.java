@@ -48,14 +48,15 @@ public class SSLConfig {
 
         boolean HARD_CODED_OVERRIDE = true;
         if (HARD_CODED_OVERRIDE) {
-            keyStorePath = "client_identity.jks";
+            keyStorePath = "correct_client_identity.jks";
             keyStorePassword = "secret".toCharArray();
             trustStorePassword = "secret".toCharArray();
-            trustStorePath = "truststore.jks";
+            trustStorePath = "fubar-san_client_truststore.jks";
         }
             return SSLFactory.builder()
                     .withIdentityMaterial(keyStorePath, keyStorePassword)
                     .withTrustMaterial(trustStorePath, trustStorePassword)
+                    .withHostnameVerifier(new CustomHostnameVerifier())
                     .build();
     }
 }
